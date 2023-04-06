@@ -5,10 +5,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
-
         System.setProperty("webdriver.firefox.driver", "C:\\Users\\Leni\\Downloads\\geckodriver-v0.32.2-win-aarch64-1\\geckodriver.exe");
         WebDriver driver = new FirefoxDriver();
-
         driver.get("https://youtube.com");
         driver.manage().window().maximize();
 
@@ -44,7 +42,5 @@ public class Main {
 
         Thread.sleep(200000L);
         driver.quit();
-
     }
-
 }
